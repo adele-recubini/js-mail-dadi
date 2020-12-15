@@ -10,17 +10,28 @@ var domandaMail = prompt('qual\ è la tua mail?');
 
 // creo la var array con la lista delle mail
 
-var array = ['adele.r87@gmail.com' , 'anonimo@gmail.com' , 'carlo@gmail.com'];
+var array = ['pippo@gmail.com', 'adele.r87@gmail.com' , 'anonimo@gmail.com' , 'carlo@gmail.com'];
 
-for(var i = 0; i < array.length; i++) {
-  if( domandaMail === array[i] ){
-    output.append('ora puoi giocare');
-  } else {
-  if( domandaMail !== array[i] ){
-  alert('effettua la registrazione');
+// ma devo creare ache una variabile esterna perchè senno mi darà errore fin quando non trova la mail
+var giustaMail = false;
+
+
+
+for(var i = 0; i <= array.length; i++) {
+  if(domandaMail === array[i] ){
+     giustaMail = true;
   }
-  }
-  }
+
+}
+
+if (giustaMail === true ) {
+  alert ('puoi continaure il gioco');
+}
+else{
+  alert('non sei ammesso')
+}
+
+
 
 
 //
@@ -34,7 +45,7 @@ var max = 6;
 var playerPc = prompt( Math.floor(Math.random() * (max + 1 - min) + min));
 var player = prompt( Math.floor(Math.random() * (max + 1 - min) + min));
 
-if( playerPc > player) {
+if (playerPc > player) {
   output.append('hai vinto');
 } else {
 if (playerPc < player) {
