@@ -13,7 +13,7 @@ var domandaMail = prompt('qual\ è la tua mail?');
 var array = ['adele.r87@gmail.com' , 'anonimo@gmail.com' , 'carlo@gmail.com'];
 
 for(var i = 0; i < array.lenght; i++) {
-  if( domandaMail === array[i] {
+  if( domandaMail === array[i] ){
     output.append('ora puoi giocare');
   } else {
     alert('error')
