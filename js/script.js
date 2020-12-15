@@ -5,17 +5,15 @@
 
 
 output = document.getElementById('mail-list');
-// genero la domanda all'utente e le possibili risposte
+// genero la domanda all'utente
 var domandaMail = prompt('qual\ è la tua mail?');
-var mail = ['adele.r87@gmail.com' , 'anonimo@gmail.com' , 'carlo@gmail.com'];
-
 
 // creo la var array con la lista delle mail
 
 var array = ['adele.r87@gmail.com' , 'anonimo@gmail.com' , 'carlo@gmail.com'];
 
 for(var i = 0; i < array.lenght; i++) {
-  if( mail  === array[i] {
+  if( domandaMail === array[i] {
     output.append('ora puoi giocare');
   } else {
     alert('error')
